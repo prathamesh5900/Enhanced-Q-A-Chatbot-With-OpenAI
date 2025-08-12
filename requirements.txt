@@ -1,6 +1,7 @@
 langchain-openai
 langchain
-python.env
+python-dotenv
 langchain_community
 langchain_core
+
 streamlit
