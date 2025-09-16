@@ -10,9 +10,9 @@ from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
 
 # LangSmith tracking (optional)
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = "Q&A chatbot with OpenAI"
+#os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+#os.environ["LANGCHAIN_TRACING_V2"] = "true"
+#os.environ["LANGCHAIN_PROJECT"] = "Q&A chatbot with OpenAI"
 
 # Prompt template
 prompt = ChatPromptTemplate.from_messages(
@@ -57,3 +57,4 @@ if user_input:
         st.write(response)
 else:
     st.write("Please provide the query")
+
